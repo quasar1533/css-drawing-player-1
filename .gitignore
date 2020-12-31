@@ -3,8 +3,5 @@
 ### Example user template
 
 # IntelliJ project files
-.idea
-.cache
-*.iml
-out
-gen
+/.idea/
+/.cache/

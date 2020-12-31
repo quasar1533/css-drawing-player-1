@@ -41,7 +41,7 @@ const player = {
   run: () => {
     player.count += 1;
     if (player.count > textString.length) {
-      clearInterval(player.id);
+      window.clearInterval(player.id);
       return;
     }
     player.ui.text.innerHTML = textString.substr(0, ratio * player.count);
@@ -49,11 +49,11 @@ const player = {
     player.ui.css.innerHTML = cssString.substr(0, player.count);
   },
   play: () => {
-    clearInterval(player.id);
-    player.id = setInterval(player.run, player.timeout);
+    window.clearInterval(player.id);
+    player.id = window.setInterval(player.run, player.timeout);
   },
   pause: () => {
-    clearInterval(player.id);
+    window.clearInterval(player.id);
   },
   slow: () => {
     player.pause();

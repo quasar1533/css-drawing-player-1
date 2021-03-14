@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"css.js":[function(require,module,exports) {
+})({"css-pikachu.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -127,7 +127,7 @@ exports.default = void 0;
 var string = "\nbody {\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  height: 50vh;\n  background-color: #ffe600;\n}\n\n.skin {\n  width: 100%;\n  height: 100%;\n  font-size: 100px;\n  background-color: #ffe600;\n}\n\n.pikachu {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  width: 5em;\n  height: 2.2em;\n  border: 1px solid transparent;\n}\n\n.pikachu .nose {\n  position: absolute;\n  width: 0;\n  height: 0;\n  /* centering trick */\n  margin: 0.5em calc(50% - 0.11em);\n  margin-top: 0.38em;\n  border-top: 0.09em solid #000;\n  border-left: 0.11em solid transparent;\n  border-right: 0.11em solid transparent;\n}\n\n.pikachu .nose::before {\n  content: \"\";\n  position: absolute;\n  bottom: 0.09em;\n  left: -0.11em;\n  background-color: #000000;\n  border-top-left-radius: 0.11em 0.05em;\n  border-top-right-radius: 0.11em 0.05em;\n  display: block;\n  border: 1px solid #000;\n  width: 0.22em;\n  height: 0.05em;\n}\n\n.pikachu .eye {\n  position: absolute;\n  width: 0.64em;\n  height: 0.64em;\n  border-radius: 50%;\n  margin-left: 1em;\n  background: #000;\n}\n\n.pikachu .eye::before {\n  content: \"\";\n  position: absolute;\n  top: 0.05em;\n  right: 0.12em;\n  display: block;\n  width: 0.25em;\n  height: 0.25em;\n  border-radius: 50%;\n  background-color: #fff;\n  animation: eyeMove 3s infinite;\n}\n\n.pikachu .right {\n  right: 1em;\n}\n\n.pikachu .mouthBox {\n  position: absolute;\n  width: 2.28em;\n  height: 1.8em;\n  margin-top: 0.66em;\n  margin-left: calc(50% - 1.14em);\n  overflow: hidden;\n}\n\n.pikachu .mouthBox .lipLeft {\n  content: \"\";\n  width: 0.8em;\n  height: 0.25em;\n  border: 0.03em solid #000;\n  background-color: #ffe600;\n  border-right: none;\n  border-top: none;\n  display: block;\n  position: absolute;\n  top: -0.04em;\n  left: 0.34em;\n  transform: rotateZ(-22deg);\n  border-bottom-left-radius: 0.6em 0.3em;\n  box-shadow: 0 -0.1em 0 #ffe600;\n  z-index: 1;\n}\n\n.pikachu .mouthBox .lipLeft::after {\n  content: \"\";\n  width: 0.04em;\n  height: 0.21em;\n  display: block;\n  position: absolute;\n  right: -0.01em;\n  top: 0.01em;\n  background-color: #ffe600;\n}\n\n.pikachu .mouthBox .lipLeft::before {\n  content: \"\";\n  width: 0.3em;\n  height: 0.04em;\n  display: block;\n  position: absolute;\n  left: 0.01em;\n  top: 0;\n  background-color: #ffe600;\n}\n\n.pikachu .mouthBox .lipRight {\n  content: \"\";\n  width: 0.8em;\n  height: 0.25em;\n  border: 0.03em solid #000;\n  background-color: #ffe600;\n  border-left: none;\n  border-top: none;\n  display: block;\n  position: absolute;\n  right: 0.33em;\n  top: -0.04em;\n  transform: rotateZ(22deg);\n  border-bottom-right-radius: 0.6em 0.3em;\n  box-shadow: 0 -0.1em 0 #ffe600;\n  z-index: 1;\n}\n\n.pikachu .mouthBox .lipRight::after {\n  content: \"\";\n  width: 0.04em;\n  height: 0.21em;\n  display: block;\n  position: absolute;\n  left: -0.01em;\n  top: 0;\n  background-color: #ffe600;\n}\n\n.pikachu .mouthBox .lipRight::before {\n  content: \"\";\n  width: 0.3em;\n  height: 0.04em;\n  display: block;\n  position: absolute;\n  right: 0.01em;\n  top: 0;\n  background-color: #ffe600;\n}\n\n.pikachu .mouthBox .mouth {\n  position: absolute;\n  border: 0.03em solid #000;\n  width: 2.28em;\n  height: 8em;\n  margin-top: -6.42em;\n  border-bottom-left-radius: 1.18em 8em;\n  border-bottom-right-radius: 1.18em 8em;\n  background-color: #9b000a;\n  overflow: hidden;\n}\n\n.pikachu .mouthBox .mouth::after {\n  content: \"\";\n  position: absolute;\n  width: 1.3em;\n  height: 1em;\n  display: block;\n  background-color: #ff485f;\n  border-radius: 50%;\n  box-shadow: 0 0.7em 0 #ff485f;\n  bottom: 0.2em;\n  left: -0.03em;\n  margin-left: 0.49em;\n}\n\n.pikachu .cheek {\n  position: absolute;\n  width: 0.82em;\n  height: 0.82em;\n  border: 0.03em solid #000;\n  background-color: #ff0000;\n  border-radius: 50%;\n  margin-top: 1.11em;\n  margin-left: 0.4em;\n}\n\n.pikachu .cheek.right {\n  right: 0.4em;\n}\n\n@keyframes eyeMove {\n  0%,\n  100% {\n    top: 0.05em;\n    right: 0.12em;\n  }\n  30%, 40%, 50% {\n    top: 0.30em;\n  }\n  75% {\n    top: 0.05em;\n    right: 0.3em;\n  }\n}\n";
 var _default = string;
 exports.default = _default;
-},{}],"scss.js":[function(require,module,exports) {
+},{}],"scss-pikachu.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -140,9 +140,9 @@ exports.default = _default;
 },{}],"testV2.js":[function(require,module,exports) {
 "use strict";
 
-var _css = _interopRequireDefault(require("./css"));
+var _cssPikachu = _interopRequireDefault(require("./css-pikachu"));
 
-var _scss = _interopRequireDefault(require("./scss"));
+var _scssPikachu = _interopRequireDefault(require("./scss-pikachu"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -152,8 +152,8 @@ var beautify = function beautify(string) {
   return string.replace(/\n/g, '<br>').replace(/ /g, '&nbsp;');
 };
 
-var textString = beautify(_scss.default);
-var ratio = textString.length / _css.default.length; // main
+var textString = beautify(_scssPikachu.default);
+var ratio = textString.length / _cssPikachu.default.length; // main
 
 var player = {
   timeout: 100,
@@ -186,20 +186,20 @@ var player = {
     player.count += 1;
 
     if (player.count > textString.length) {
-      clearInterval(player.id);
+      window.clearInterval(player.id);
       return;
     }
 
     player.ui.text.innerHTML = textString.substr(0, ratio * player.count);
     player.ui.text.scrollTop = player.ui.text.scrollHeight;
-    player.ui.css.innerHTML = _css.default.substr(0, player.count);
+    player.ui.css.innerHTML = _cssPikachu.default.substr(0, player.count);
   },
   play: function play() {
-    clearInterval(player.id);
-    player.id = setInterval(player.run, player.timeout);
+    window.clearInterval(player.id);
+    player.id = window.setInterval(player.run, player.timeout);
   },
   pause: function pause() {
-    clearInterval(player.id);
+    window.clearInterval(player.id);
   },
   slow: function slow() {
     player.pause();
@@ -218,7 +218,7 @@ var player = {
   }
 };
 player.init();
-},{"./css":"css.js","./scss":"scss.js"}],"../../../../../AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./css-pikachu":"css-pikachu.js","./scss-pikachu":"scss-pikachu.js"}],"C:/Users/10292/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -246,7 +246,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "5009" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "11509" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -422,5 +422,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js","testV2.js"], null)
+},{}]},{},["C:/Users/10292/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js","testV2.js"], null)
 //# sourceMappingURL=/testV2.0dad71e7.js.map

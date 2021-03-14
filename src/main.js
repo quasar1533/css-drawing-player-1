@@ -57,12 +57,12 @@ const player = {
   },
   slow: () => {
     player.pause();
-    player.timeout = 300;
+    player.timeout = 200;
     player.play();
   },
   normal: () => {
     player.pause();
-    player.timeout = 100;
+    player.timeout = 90;
     player.play();
   },
   fast: () => {

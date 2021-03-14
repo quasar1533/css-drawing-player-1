@@ -1,0 +1,2 @@
+*{margin:0;padding:0}*,:after,:before{box-sizing:border-box}#text{position:fixed;top:0;left:0;height:50vh;width:100%;background-color:#fff;overflow-y:auto}#text::-webkit-scrollbar{display:none}.buttons{font-family:COCOGOOSE;position:fixed;z-index:10;top:10px;right:10px}.buttons div{font-size:1.3rem;text-align:center;padding:7px 10px 4px;margin-bottom:10px;background-color:red;border:3px solid #000;cursor:pointer}
+/*# sourceMappingURL=/style.35e2ff3b.css.map */
